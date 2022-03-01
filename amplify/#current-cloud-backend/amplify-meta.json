@@ -19,6 +19,41 @@
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false,
+      "output": {
+        "UserPoolId": "us-east-1_Ki14f3TWT",
+        "UserPoolName": "SAML",
+        "AppClientID": "39tcf6iu7jcnqn98dst2mkesh5",
+        "AppClientIDWeb": "39tcf6iu7jcnqn98dst2mkesh5",
+        "HostedUIDomain": "bashatahsm",
+        "CreatedSNSRole": "arn:aws:iam::346272124263:role/service-role/SAML-SMS-Role",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\",\"implicit\"],\"AllowedOAuthScopes\":[\"aws.cognito.signin.user.admin\",\"email\",\"openid\",\"phone\",\"profile\"],\"CallbackURLs\":[\"amplifyauth://callback/\",\"http://localhost:3000\"],\"LogoutURLs\":[\"amplifyauth://signout/\",\"http://localhost:3000\"]}"
+      },
+      "frontendAuthConfig": {
+        "socialProviders": [
+          "FACEBOOK",
+          "GOOGLE",
+          "APPLE"
+        ],
+        "usernameAttributes": [],
+        "signupAttributes": [],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_UPPERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS"
+          ]
+        },
+        "mfaConfiguration": "OPTIONAL",
+        "mfaTypes": [
+          "SMS",
+          "TOTP"
+        ],
+        "verificationMechanisms": [
+          "PHONE_NUMBER"
+        ]
+      },
       "lastPushTimeStamp": "2021-11-16T02:18:42.244Z"
     }
   }
