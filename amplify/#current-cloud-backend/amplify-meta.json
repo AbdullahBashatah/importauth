@@ -1,0 +1,25 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-importauth-dev-124525-authRole",
+      "UnauthRoleArn": "arn:aws:iam::346272124263:role/amplify-importauth-dev-124525-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::346272124263:role/amplify-importauth-dev-124525-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-importauth-dev-124525-deployment",
+      "UnauthRoleName": "amplify-importauth-dev-124525-unauthRole",
+      "StackName": "amplify-importauth-dev-124525",
+      "StackId": "arn:aws:cloudformation:us-east-1:346272124263:stack/amplify-importauth-dev-124525/d664a4d0-0b97-11ec-96ce-0e03ee49136b",
+      "AmplifyAppId": "d2eh2fib1ahz5f"
+    }
+  },
+  "auth": {
+    "importauthc92f6720": {
+      "service": "Cognito",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "lastPushTimeStamp": "2021-11-16T02:18:42.244Z"
+    }
+  }
+}
