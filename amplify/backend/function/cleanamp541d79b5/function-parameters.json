@@ -1,0 +1,13 @@
+{
+  "lambdaLayers": [],
+  "permissions": {
+    "auth": {
+      "cleanamp016f00b1": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  }
+}
