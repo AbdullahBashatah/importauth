@@ -1,42 +1,39 @@
 {
-  "function": {
-    "cleanamp541d79b5": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "auth",
-          "resourceName": "cleanamp016f00b1",
-          "attributes": [
-            "UserPoolId"
-          ]
-        }
-      ]
-    },
-    "cleanamp0a14f7e4": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": []
-    }
-  },
   "auth": {
-    "cleanamp016f00b1": {
+    "importauthc92f6720": {
       "service": "Cognito",
+      "serviceType": "imported",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false
-    }
-  },
-  "analytics": {
-    "cleanamp": {
-      "service": "Pinpoint",
-      "providerPlugin": "awscloudformation"
+    },
+    "importauthe4ec77fb": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      }
     }
   },
   "api": {
-    "cleanamp": {
+    "importauth": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
       "output": {
@@ -44,7 +41,7 @@
           "defaultAuthentication": {
             "authenticationType": "AMAZON_COGNITO_USER_POOLS",
             "userPoolConfig": {
-              "userPoolId": "authcleanamp016f00b1"
+              "userPoolId": "authimportauthe4ec77fb"
             }
           },
           "additionalAuthenticationProviders": []

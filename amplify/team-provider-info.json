@@ -1,32 +1,4 @@
 {
-  "prod": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-cleanamp-prod-154534-authRole",
-      "UnauthRoleArn": "arn:aws:iam::346272124263:role/amplify-cleanamp-prod-154534-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::346272124263:role/amplify-cleanamp-prod-154534-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-cleanamp-prod-154534-deployment",
-      "UnauthRoleName": "amplify-cleanamp-prod-154534-unauthRole",
-      "StackName": "amplify-cleanamp-prod-154534",
-      "StackId": "arn:aws:cloudformation:us-east-1:346272124263:stack/amplify-cleanamp-prod-154534/37e96a60-e6c2-11eb-ae15-12bdd946785e",
-      "AmplifyAppId": "d17sxxvm0eczyo"
-    },
-    "categories": {
-      "function": {
-        "cleanamp541d79b5": {
-          "deploymentBucketName": "amplify-cleanamp-prod-154534-deployment",
-          "s3Key": "amplify-builds/cleanamp541d79b5-4a585141784569706e6b-build.zip"
-        },
-        "cleanamp0a14f7e4": {
-          "deploymentBucketName": "amplify-cleanamp-prod-154534-deployment",
-          "s3Key": "amplify-builds/cleanamp0a14f7e4-7533765a4b5a4d784572-build.zip"
-        }
-      },
-      "auth": {
-        "cleanamp016f00b1": {}
-      }
-    }
-  },
   "dev": {
     "awscloudformation": {
       "AuthRoleName": "amplify-importauth-dev-124525-authRole",
@@ -46,7 +18,8 @@
           "userPoolName": "SAML",
           "webClientId": "39tcf6iu7jcnqn98dst2mkesh5",
           "nativeClientId": "39tcf6iu7jcnqn98dst2mkesh5"
-        }
+        },
+        "importauthe4ec77fb": {}
       }
     }
   }

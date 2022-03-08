@@ -1,14 +1,14 @@
 {
   "version": 1,
   "serviceConfiguration": {
+    "apiName": "importauth",
     "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/bashatah/Desktop/code/AmplifyProjects/ImportAuth/amplify/backend/api/importauth/schema.graphql",
     "defaultAuthType": {
       "mode": "AMAZON_COGNITO_USER_POOLS",
-      "cognitoUserPoolId": "authcleanamp016f00b1"
+      "cognitoUserPoolId": "authimportauthe4ec77fb"
     },
     "conflictResolution": {},
-    "apiName": "cleanamp",
-    "gqlSchemaPath": "/Users/bashatah/Desktop/code/AmplifyProjects/ImportAuth/amplify/backend/api/cleanamp/schema.graphql",
     "additionalAuthTypes": []
   }
 }
