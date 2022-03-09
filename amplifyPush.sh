@@ -85,6 +85,16 @@ AWSCONFIG="{\
 \"useProfile\":true,\
 \"profileName\":\"default\",\
 \"AmplifyAppId\":\"${AWS_APP_ID}\"\
+\"facebookAppIdUserPool\":\"${AMPLIFY_FACEBOOK_CLIENT_ID}\",\
+\"facebookAppSecretUserPool\":\"${AMPLIFY_FACEBOOK_CLIENT_SECRET}\",\
+\"googleAppIdUserPool\":\"${AMPLIFY_GOOGLE_CLIENT_ID}\",\
+\"googleAppSecretUserPool\":\"${AMPLIFY_GOOGLE_CLIENT_SECRET}\",\
+\"amazonAppIdUserPool\":\"${AMPLIFY_AMAZON_CLIENT_ID}\",\
+\"amazonAppSecretUserPool\":\"${AMPLIFY_AMAZON_CLIENT_SECRET}\"\
+\"userPoolId\": \"${AMPLIFY_USERPOOL_ID}\"\
+\"webClientId\": \"${AMPLIFY_WEBCLIENT_ID}\"\
+\"nativeClientId\":\"${AMPLIFY_NATIVECLIENT_ID}\"\
+\"identityPoolId\": \"${AMPLIFY_IDENTITYPOOL_ID}\"\
 }"
 AMPLIFY="{\
 \"envName\":\"${ENV}\",\
