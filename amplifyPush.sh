@@ -16,7 +16,7 @@ init_env () {
     CODEGEN=$4
     AWSCONFIG=$5
     CATEGORIES=$6
-
+    echo "# Categories ${CATEGORIES}"
     echo "# Start initializing Amplify environment: ${ENV}"
     if [[ -z ${STACKINFO} ]];
     then
