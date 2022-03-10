@@ -17,6 +17,7 @@ init_env () {
     AWSCONFIG=$5
     CATEGORIES=$6
     echo "# my script ${AMPLIFY_USERPOOL_ID}"
+    echo "# my script ${CATEGORIES}"
     echo "# Start initializing Amplify environment: ${ENV}"
     if [[ -z ${STACKINFO} ]];
     then
