@@ -16,6 +16,16 @@ init_env () {
     CODEGEN=$4
     AWSCONFIG=$5
     CATEGORIES=$6
+    AUTHCONFIG="{\
+\"userPoolId\": \"${AMPLIFY_USERPOOL_ID}\",\
+\"webClientId\": \"${AMPLIFY_WEBCLIENT_ID}\",\
+\"nativeClientId\": \"${AMPLIFY_NATIVECLIENT_ID}\",\
+\"identityPoolId\": \"${AMPLIFY_IDENTITYPOOL_ID}\"\
+}"
+
+CATEGORIES="{\
+\"auth\":$AUTHCONFIG\
+}"
     echo "# my script ${AMPLIFY_USERPOOL_ID}"
     echo "# my script ${CATEGORIES}"
     echo "# Start initializing Amplify environment: ${ENV}"
