@@ -16,16 +16,7 @@ init_env () {
     CODEGEN=$4
     AWSCONFIG=$5
     CATEGORIES=$6
-    AUTHCONFIG="{\
-\"userPoolId\": \"${AMPLIFY_USERPOOL_ID}\",\
-\"webClientId\": \"${AMPLIFY_WEBCLIENT_ID}\",\
-\"nativeClientId\": \"${AMPLIFY_NATIVECLIENT_ID}\",\
-\"identityPoolId\": \"${AMPLIFY_IDENTITYPOOL_ID}\"\
-}"
 
-CATEGORIES="{\
-\"auth\":$AUTHCONFIG\
-}"
     echo "# my script ${AMPLIFY_USERPOOL_ID}"
     echo "# my script ${CATEGORIES}"
     echo "# Start initializing Amplify environment: ${ENV}"
@@ -118,10 +109,10 @@ else
     \"googleAppIdUserPool\":\"${AMPLIFY_GOOGLE_CLIENT_ID}\",\
     \"googleAppSecretUserPool\":\"${AMPLIFY_GOOGLE_CLIENT_SECRET}\",\
     \"amazonAppIdUserPool\":\"${AMPLIFY_AMAZON_CLIENT_ID}\",\
-    \"amazonAppSecretUserPool\":\"${AMPLIFY_AMAZON_CLIENT_SECRET}\"\,
-    \"userPoolId\": \"${AMPLIFY_USERPOOL_ID}\"\
-    \"webClientId\": \"${AMPLIFY_WEBCLIENT_ID}\"\
-    \"nativeClientId\":\"${AMPLIFY_NATIVECLIENT_ID}\"\
+    \"amazonAppSecretUserPool\":\"${AMPLIFY_AMAZON_CLIENT_SECRET}\"\,\
+    \"userPoolId\": \"${AMPLIFY_USERPOOL_ID}\",\
+    \"webClientId\": \"${AMPLIFY_WEBCLIENT_ID}\",\
+    \"nativeClientId\": \"${AMPLIFY_NATIVECLIENT_ID}\",\
     \"identityPoolId\": \"${AMPLIFY_IDENTITYPOOL_ID}\"\
     }"
     CATEGORIES="{\
