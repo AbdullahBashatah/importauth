@@ -16,7 +16,7 @@ init_env () {
     CODEGEN=$4
     AWSCONFIG=$5
     CATEGORIES=$6
-    echo "# my script"
+    echo "# my script ${AMPLIFY_USERPOOL_ID}"
     echo "# Start initializing Amplify environment: ${ENV}"
     if [[ -z ${STACKINFO} ]];
     then
@@ -108,10 +108,10 @@ else
     \"googleAppSecretUserPool\":\"${AMPLIFY_GOOGLE_CLIENT_SECRET}\",\
     \"amazonAppIdUserPool\":\"${AMPLIFY_AMAZON_CLIENT_ID}\",\
     \"amazonAppSecretUserPool\":\"${AMPLIFY_AMAZON_CLIENT_SECRET}\"\,
-    \"userPoolId\": \"myproject-userpool-id\",\
-    \"webClientId\": \"appid-web\",\
-    \"nativeClientId\": \"appid-native\",\
-    \"identityPoolId\": \"myproject-idp-poolid\"\
+    \"userPoolId\": \"${AMPLIFY_USERPOOL_ID}\"\
+    \"webClientId\": \"${AMPLIFY_WEBCLIENT_ID}\"\
+    \"nativeClientId\":\"${AMPLIFY_NATIVECLIENT_ID}\"\
+    \"identityPoolId\": \"${AMPLIFY_IDENTITYPOOL_ID}\"\
     }"
     CATEGORIES="{\
     \"auth\":$AUTHCONFIG\
