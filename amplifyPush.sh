@@ -118,6 +118,16 @@ else
     CATEGORIES="{\
     \"auth\":$AUTHCONFIG\
     }"
+    AUTHCONFIG="{\
+    \"userPoolId\": \"${AMPLIFY_USERPOOL_ID}\",\
+    \"webClientId\": \"${AMPLIFY_WEBCLIENT_ID}\",\
+    \"nativeClientId\": \"${AMPLIFY_NATIVECLIENT_ID}\",\
+    \"identityPoolId\": \"${AMPLIFY_IDENTITYPOOL_ID}\"\
+    }"
+
+    CATEGORIES="{\
+    \"auth\":$AUTHCONFIG\
+    }"
 fi
 # Handle old or new config file based on simple flag
 if [[ ${IS_SIMPLE} ]];
