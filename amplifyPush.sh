@@ -107,7 +107,11 @@ else
     \"googleAppIdUserPool\":\"${AMPLIFY_GOOGLE_CLIENT_ID}\",\
     \"googleAppSecretUserPool\":\"${AMPLIFY_GOOGLE_CLIENT_SECRET}\",\
     \"amazonAppIdUserPool\":\"${AMPLIFY_AMAZON_CLIENT_ID}\",\
-    \"amazonAppSecretUserPool\":\"${AMPLIFY_AMAZON_CLIENT_SECRET}\"\
+    \"amazonAppSecretUserPool\":\"${AMPLIFY_AMAZON_CLIENT_SECRET}\"\,
+    \"userPoolId\": \"myproject-userpool-id\",\
+    \"webClientId\": \"appid-web\",\
+    \"nativeClientId\": \"appid-native\",\
+    \"identityPoolId\": \"myproject-idp-poolid\"\
     }"
     CATEGORIES="{\
     \"auth\":$AUTHCONFIG\
