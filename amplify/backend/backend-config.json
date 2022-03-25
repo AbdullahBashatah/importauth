@@ -39,14 +39,37 @@
       "output": {
         "authConfig": {
           "defaultAuthentication": {
-            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-            "userPoolConfig": {
-              "userPoolId": "authimportauthe4ec77fb"
+            "authenticationType": "AWS_LAMBDA",
+            "lambdaAuthorizerConfig": {
+              "lambdaFunction": "graphQlLambdaAuthorizer19908b02",
+              "ttlSeconds": "300"
             }
           },
           "additionalAuthenticationProviders": []
         }
       }
+    }
+  },
+  "function": {
+    "graphQlLambdaAuthorizer19908b02": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "importauth70e8070c": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "graphQlLambdaAuthorizer57445f16": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "importauth5c9eca9e": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   }
 }

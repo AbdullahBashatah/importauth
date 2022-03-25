@@ -5,10 +5,15 @@
     "serviceName": "AppSync",
     "gqlSchemaPath": "/Users/bashatah/Desktop/code/AmplifyProjects/ImportAuth/amplify/backend/api/importauth/schema.graphql",
     "defaultAuthType": {
-      "mode": "AMAZON_COGNITO_USER_POOLS",
-      "cognitoUserPoolId": "authimportauthe4ec77fb"
+      "mode": "AWS_LAMBDA",
+      "lambdaFunction": "graphQlLambdaAuthorizer19908b02",
+      "ttlSeconds": "300"
     },
-    "conflictResolution": {},
+    "conflictResolution": {
+      "defaultResolutionStrategy": {
+        "type": "AUTOMERGE"
+      }
+    },
     "additionalAuthTypes": []
   }
 }

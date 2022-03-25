@@ -2,11 +2,5 @@
   "AppSyncApiName": "importauth",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false,
-  "AuthCognitoUserPoolId": {
-    "Fn::GetAtt": [
-      "authimportauthe4ec77fb",
-      "Outputs.UserPoolId"
-    ]
-  },
-  "AuthModeLastUpdated": "2022-03-08T02:17:47.410Z"
+  "AuthModeLastUpdated": "2022-03-23T22:01:26.763Z"
 }

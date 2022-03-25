@@ -20,6 +20,20 @@
           "nativeClientId": "39tcf6iu7jcnqn98dst2mkesh5"
         },
         "importauthe4ec77fb": {}
+      },
+      "function": {
+        "graphQlLambdaAuthorizer19908b02": {
+          "deploymentBucketName": "amplify-importauth-dev-124525-deployment",
+          "s3Key": "amplify-builds/graphQlLambdaAuthorizer19908b02-554674376e4f32434c51-build.zip"
+        },
+        "graphQlLambdaAuthorizer57445f16": {
+          "deploymentBucketName": "amplify-importauth-dev-124525-deployment",
+          "s3Key": "amplify-builds/graphQlLambdaAuthorizer57445f16-49556547584978783747-build.zip"
+        },
+        "importauth70e8070c": {
+          "deploymentBucketName": "amplify-importauth-dev-124525-deployment",
+          "s3Key": "amplify-builds/importauth70e8070c-72434a49796d69684665-build.zip"
+        }
       }
     }
   }
